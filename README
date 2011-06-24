@@ -1,4 +1,4 @@
-Inspired by :http://wiki.apache.org/cassandra/Locking
+Inspired by : http://wiki.apache.org/cassandra/Locking
 Bakery Algorithm: http://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm
 
 
