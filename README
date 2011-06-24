@@ -1,0 +1,7 @@
+Performance Test: June 24, 2011
+3-Node Cassandra cluster: (Rackspace/8GB nodes)
+3-Load test nodes: 1 Lock creation/2 Lock acquisition (Rackspace/2GB Nodes)
+
+
+Single Node throughput: 81858 Locks/600sec, 81322 Locks/600sec
+Aggregate throughput: 271 locks acquired/sec
