@@ -1,0 +1,42 @@
+create keyspace lock_store
+   with
+placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy'
+and strategy_options = [{replication_factor:2}];
+use lock_store;
+
+create column family lock_queue
+    with comparator = UTF8Type and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
+create column family lock_detail
+    with comparator = UTF8Type and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
+create column family lock_error_queue
+    with comparator = UTF8Type and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
+create column family lock_type_lock
+    with comparator = TimeUUIDType and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
+create column family lock_choosing
+    with comparator = UTF8Type and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
+create column family lock_token
+    with comparator = UTF8Type and
+    keys_cached=1000 and
+    rows_cached=1000 and
+    comment = 'Used to generate manage lock queue. Uses the bakery algorithm to manage a distributed lock queue.';
+
