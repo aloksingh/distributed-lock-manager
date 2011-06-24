@@ -1,3 +1,8 @@
+Inspired by :http://wiki.apache.org/cassandra/Locking
+Bakery Algorithm: http://en.wikipedia.org/wiki/Lamport%27s_bakery_algorithm
+
+
+
 Performance Test: June 24, 2011
 3-Node Cassandra cluster: (Rackspace/8GB nodes)
 3-Load test nodes: 1 Lock creation/2 Lock acquisition (Rackspace/2GB Nodes)
